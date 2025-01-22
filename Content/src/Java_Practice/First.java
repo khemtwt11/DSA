@@ -1,7 +1,8 @@
-package DSA;
+package Java_Practice;
+
 
 public class First{
     public static void main(String[] args) {
-        System.out.println("test");
+        System.out.println("First");
     }
 }
