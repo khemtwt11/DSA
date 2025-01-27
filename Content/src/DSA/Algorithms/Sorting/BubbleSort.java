@@ -1,6 +1,13 @@
 package DSA.Algorithms.Sorting;
-
 import java.util.Arrays;
+
+/*
+1. we make multiple passes through the array
+2. For every pass, we compare the adjacent element
+3. We swap elements, if they are in wrong order( either ascending or descending)
+4. After each pass we 'bubble up' the element to it's correct position based on its order
+5. We perform this process for n-1 times, or no until no swap needed in a pass.
+ */
 
 public class BubbleSort {
     public static void bubbleSortImplemenation(int[] arr){
