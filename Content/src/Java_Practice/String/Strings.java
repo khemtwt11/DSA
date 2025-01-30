@@ -2,7 +2,10 @@ package Java_Practice.String;
 import java.lang.String;
 import java.util.Arrays;
 // chars are represented as 16-bit(2byte). This allows java to support different type of symbols
-
+/*
+The difference between StringBuffer and StringBuilder is that the former guarantees thread safety.
+In a single-threaded environment, StringBuilder is more efficient.
+ */
 public class Strings {
     // Create string
     public static void main(String[] args) {
