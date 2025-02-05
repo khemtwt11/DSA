@@ -4,7 +4,7 @@ package DSA.Problem_Solving.Easy.Array;
 public class TwoSum {
     public static void main(String[] args) {
         int[] arr = new int[]{1,0,7,7,1};
-        int k = 1;
+        int k = 14;
         int n = arr.length;
         boolean pairFound = false;
         for(int i=0;i<n;i++){
