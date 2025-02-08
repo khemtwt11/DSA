@@ -18,7 +18,7 @@ Note that when answering a query, lack of a color will not be considered as a co
 public class FindNumberOfDistinctColors {
     public static void main(String[] args) {
         int limit = 4;
-        int[][] queries = {{1,4},{2,5},{1,3},{3,4}};
+        int[][] queries = {{1,4},{2,5},{1,3},{3,4},{2,3}};
         HashMap<Integer,Integer> map = new HashMap<>();
         int[] result = new int[queries.length];  // Should be queries.length, not limit
 
@@ -31,7 +31,9 @@ public class FindNumberOfDistinctColors {
 
             // If ball was previously colored, remove that color's count
             if(map.containsKey(ball)) {
+//                System.out.println(map);
                 int oldColor = map.get(ball);
+//                System.out.println(colorCount.get(oldColor));
                 colorCount.put(oldColor, colorCount.get(oldColor) - 1);
                 if(colorCount.get(oldColor) == 0) {
                     colorCount.remove(oldColor);
@@ -41,7 +43,8 @@ public class FindNumberOfDistinctColors {
             // Add new color
             map.put(ball, newColor);
             colorCount.put(newColor, colorCount.getOrDefault(newColor, 0) + 1);
-
+            System.out.println(map);
+            System.out.println("color" + colorCount);
             result[i] = colorCount.size();
         }
         System.out.println(Arrays.toString(result));
