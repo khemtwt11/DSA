@@ -1,5 +1,8 @@
 package DSA.Problem_Solving.Easy.Array;
-
+/*
+Subarray : print all the possible pair which are contiguous within the array
+total number of subarray in an array are : n(n+1)/2
+ */
 public class SubArray {
     public static void main(String[] args) {
      int[] arr =  {1,2,3,4,5};
