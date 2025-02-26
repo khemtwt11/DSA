@@ -3,7 +3,15 @@ package Java_Practice.HashMap;
 import java.sql.SQLOutput;
 import java.util.HashMap;
 import java.util.Map;
-// HashMap is a data-structure that stores key-value pairs and uses a hashing technique to store the elements. It's like a dictionary
+/*
+ HashMap is a data-structure that stores key-value pairs and uses a hashing technique to store the elements. It's like a dictionary
+
+ Hashmap allows for efficient retrieval, insertion and removal with average of O(1)
+
+ Not ordered : Hashmap doesn't preserve order which means it the order in which elements are added to the map is not preserved.
+
+ */
+
 public class HashMapImplementation {
     public static void main(String[] args) {
         HashMap<Character,Integer>  hm= new HashMap<>();
